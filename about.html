@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <title>About Us</title>
+</head>
+<body>
+    <!-- navbar -->
+        <div class="navbar-container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="logo" class="logo-img">
+            <h1 class="logo-title">Eight H</h1>
+        </div>
+            <nav class="nav-bar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a onclick="darkMode()" id="mode" class="nav-a">Mode</a></li>
+                </ul>
+            </nav>
+        <button class="btn-cta"><a href="index.html" class="nav-a">Back To Home</a></button>
+        </div>
+        <!-- navbar done -->
+        
+        <!-- content -->
+        <div class="parallax">
+            <div class="photo-container">
+            <p class="ftext">This is Our Class Photo:</p>
+            <img src="assets/img/2.jpg" class="cimg"><br>
+            <img src="assets/img/3.jpg" class="cimg"><br>
+            <img src="assets/img/4.jpg" class="cimg"><br>
+            <img src="assets/img/6.jpg" class="cimg"><br>
+        
+            <p class="ftext">Our Class Structure:</p>
+            <img src="assets/img/5.jpg" class="cimg"><br>
+            
+            <p class="ftext">Our Class Schedule:</p>
+            <table class="table">
+                <tr>
+                    <th class="th"></th>
+                    <th class="th"></th>
+                    <th class="th">HARI</th>
+                    <th class="th"></th>
+                    <th class="th"></th>
+                </tr>
+                <tr>
+                    <th class="tablehead">Senin</th>
+                    <th class="tablehead">Selasa</th>
+                    <th class="tablehead">Rabu</th>
+                    <th class="tablehead">Kamis</th>
+                    <th class="tablehead">Jumat</th>
+                </tr>
+                <tr>
+                    <td class="ftd">Indonesia</td>
+                    <td class="ftd">Ips</td>
+                    <td class="ftd">Seni Budaya</td>
+                    <td class="ftd">Ips</td>
+                    <td class="ftd">PJOK</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Indonesia</td>
+                    <td class="ftd">Ips</td>
+                    <td class="ftd">Seni Budaya</td>
+                    <td class="ftd">Ips</td>
+                    <td class="ftd">PJOK</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Seni Budaya</td>
+                    <td class="ftd">Ipa</td>
+                    <td class="ftd">Indonesia</td>
+                    <td class="ftd">Informatika</td>
+                    <td class="ftd">PJOK</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Ipa</td>
+                    <td class="ftd">Ipa</td>
+                    <td class="ftd">Indonesia</td>
+                    <td class="ftd">Informatika</td>
+                    <td class="ftd">Indonesia</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Ipa</td>
+                    <td class="ftd">Sunda</td>
+                    <td class="ftd">Inggris</td>
+                    <td class="ftd">Indonesia</td>
+                    <td class="ftd">Matematika</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Inggris</td>
+                    <td class="ftd">Sunda</td>
+                    <td class="ftd">Ipa</td>
+                    <td class="ftd">Matematika</td>
+                    <td class="ftd">Matematika</td>
+                </tr>
+                <tr>
+                    <td class="ftd">Inggris</td>
+                    <td class="ftd">PPKN</td>
+                    <td class="ftd">Agama</td>
+                    <td class="ftd">Inggris</td>
+                    <td class="ftd">-</td>
+                </tr>
+                <tr>
+                    <td class="ftd">-</td>
+                    <td class="ftd">PPKN</td>
+                    <td class="ftd">Agama</td>
+                    <td class="ftd">Matematika</td>
+                    <td class="ftd">-</td>
+                </tr>
+                <tr>
+                    <td class="ftd">-</td>
+                    <td class="ftd">PPKN</td>
+                    <td class="ftd">Agama</td>
+                    <td class="ftd">Matematika</td>
+                    <td class="ftd">-</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    <!-- content done -->
+
+    <!-- js -->
+    <script>
+        let body = document.body;
+
+        function darkMode() {
+            // render function
+            body.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/img/logo.png" rel="icon">
+    <title>Eight H Class Website</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar-container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="logo" class="logo-img">
+            <h1 class="logo-title">Eight H</h1>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-ul">
+                <li class="nav-li"><a href="#" class="nav-a" id="home">Home</a></li>
+                <li class="nav-li"><a href="#about" class="nav-a">About Us</a></li>
+                <li class="nav-li"><a href="#contact" class="nav-a">Contact Us</a></li>
+                <li class="nav-li"><a onclick="darkMode()" id="mode" class="nav-a">Mode</a></li>
+            </ul>
+        </nav>
+        <button class="btn-cta" onclick="redirInstagram()">Follow Us</button>
+    </div>
+    <!-- navbar done -->
+
+    <!-- content -->
+    <div class="content-container">
+        <div class="intro">
+            <p class="title">Hello, Welcome to Eight H Class Website</p>
+            <p class="description">Ultimate Class from SMPN 8 Bekasi</p>
+            <p id="info"></p>
+            <img src="assets/img/b.png" class="intro-img">
+            <img src="assets/img/2.jpg" class="intro-img">
+        </div>
+    </div>
+    <div class="parallax" id="parallax">
+        <div class="About" id="about">
+            <p class="title">We have 40 people in our class!</p>
+            <p class="description">Have so many smart,beautiful,and good people</p>
+            <div class="margin-t10">
+                <button class="btn-cta"><a href="about.html" class="nav-a"
+                        onclick="alert('Anda akan diarahkan ke galeri foto kami, apakah anda siap?')">Our Class
+                        Photo</a></button>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="card" id="contact">
+                <div class="card-item">
+                    <img src="assets/img/Ig-logo.png" class="card-img">
+                    <p class="card-title">Our Instagram</p>
+                    <p class="card-description">Follow our class Instagram</p>
+                    <button class="btn-cta" onclick="redirInstagram()">Visit</button>
+                </div>
+                <div class="card-item">
+                    <img src="assets/img/ngl logo.png" class="card-img">
+                    <p class="card-title">Our class NGL</p>
+                    <p class="card-description">Send some Masssage to us!</p>
+                    <button class="btn-cta" onclick="redirNgl()">Visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="title">&copy;Eight H class Website 2023-2024</p>
+    </footer>
+
+    <!-- js -->
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/wiseexplorers_8h?igshid=MzRlODBiNWFlZA=="
+        }
+
+        function redirNgl() {
+            window.location.href = "https://ngl.link/wiseexplorers_8h"
+        }
+
+        //dark mode 
+        let body = document.body;
+        let mode = document.getElementById("mode");
+
+        function darkMode() {
+            // render function
+            body.classList.toggle("dark");
+        }
+    </script>
+</body>
+
+</html>
